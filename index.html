@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Thông Tin Nhân Viên</h1>
+      </div>
+      <div class="row">
+        <form class="col-6 form-input">
+          <div class="input-group mb-3">
+            <div class="input-group-text bg-success text-light">
+              Mã Nhân Viên
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              id="maNV"
+              title="Mã Nhân Viên"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-success text-light"
+                >Tên Nhân Viên</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              aria-label="Tên Nhân Viên"
+              aria-describedby="basic-addon1"
+              id="tenNV"
+              title="Tên Nhân Viên"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label
+                class="input-group-text bg-success text-light"
+                for="inputGroupSelect01"
+                >Chức Vụ</label
+              >
+            </div>
+            <select class="custom-select" id="selectCV">
+              <option value="3">Giám Đốc</option>
+              <option value="2">Quản Lý</option>
+              <option value="1">Nhân Viên</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-success text-light"
+                >Hệ Số Lương</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              aria-label="Hệ Số Lương"
+              aria-describedby="basic-addon1"
+              id="heSoLuong"
+              title="Hệ Số Lương"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-success text-light"
+                >Lương Cơ Bản</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              aria-label="Lương Cơ Bản"
+              aria-describedby="basic-addon1"
+              id="luongCoBan"
+              title="Lương Cơ Bản"
+            />
+          </div>
+          <div class="text-center">
+            <button class="btn btn-danger" id="btnTinhLuong" type="submit">
+              Tính Lương
+            </button>
+          </div>
+        </form>
+        <div class="col-6">
+          <form>
+            <div class="bg-dark container">
+              <table class="table text-white">
+                <thead>
+                  <h4 class="text-center text-light">Thông Tin Nhân Viên</h4>
+                  <tr class="text-warning">
+                    <td>Mã</td>
+                    <td>Tên</td>
+                    <td>Chức Vụ</td>
+                    <td>Tổng Lương</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="font-weight-bold text-warning tdBody"></tr>
+                  <td class="tdMaNV"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
